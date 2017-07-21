@@ -16,7 +16,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import static sun.plugin.javascript.navig.JSType.Document;
+
 
 /**
  * Created by [mengsen] on 2017/7/20 0020.
@@ -86,7 +86,7 @@ public class DownWebPageUtils {
         return list;
     }
     public static void main(String[] args) {
-        List<HashMap<String, String>> resultList = analyzeHtml("http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E4%B8%8A%E6%B5%B7&kw=java&sm=0&p=1", "UTF-8");
+        List<HashMap<String, String>> resultList = analyzeHtml("http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E4%B8%8A%E6%B5%B7&kw=ui%E8%AE%BE%E8%AE%A1%E5%B8%88&sm=0&p=1", "UTF-8");
         System.out.println(resultList);
     }
 }
